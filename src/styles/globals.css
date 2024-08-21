@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton:wght@200;300;400;500;600;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 /* UMUM START */
 /* UMUM START */
@@ -8,7 +9,7 @@
   --warna-sekunder: #293e92;
   --warna-tulisan: #333;
   --warna-tulisan2: #fff;
-  --font-family: "Titillium Web", sans-serif; 
+  --font-family: "Anton", sans-serif; 
 }
 
 h1, h2, h3, h4, h5, h6, a, p {
@@ -100,7 +101,7 @@ a:focus,
 #menu {
   padding: 15px;
   transition: all 0.8s;
-  font-family: "Raleway", sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: var(--warna-tulisan);
 }
 /* NAVIGATION END */
@@ -450,6 +451,8 @@ label {
 }
 .form-control::-webkit-input-placeholder {
   color: #777;
+  font-size: 13px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .form-control:-moz-placeholder {
   color: #777;
@@ -788,207 +791,139 @@ label {
 /* REGISTRATION START */
 /* REGISTRATION START */
 .registration-section {
-padding: 10rem 25px 75px 25px  ;
+  /* max-width: 650px;
+  padding: 28px;
+  margin: 0 28px;
+  box-shadow: 0 15px 20px; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 140vh;
+/* padding: 10rem 25px 75px 25px  ;
 background: var(--warna-tulisan2);
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 }
 
-.registration-section .container .title {
-font-size: 25px;
-font-weight: 500;
-position: relative;
-}
-.registration-section .container .title::before {
-content: '';
-position: absolute;
-left: 0;
-bottom: 0;
-height: 3px;
-width: 30px;
-border-radius: 5px;
-}
-.registration-section .content form .user-details {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-margin: 50px 0 20px 0;
-}
-.registration-section form .user-details .input-box {
-margin-bottom: 30px;
-width: calc(100% / 2 - 20px);
-color: var(--warna-primary);
-font-size: clamp(14px, 2vw, 24px);  ;
-}
-.registration-section form .input-box span.details {
-display: block;
-font-weight: 500;
-margin-bottom: 5px;
-}
-
-.registration-section .form-label{
-color: var(--warna-tulisan);
-font-size: clamp(16px, 2vw, 24px);
-}
-.registration-section .gam{
-display: flex;
-}
-
-.registration-section .user-details .input-box input {
-height: 45px;
-width: 100%;
-outline: none;
-font-size: 16px;
-border-radius: 5px;
-padding-left: 15px;
-border: 1px solid var(--warna-primary);
-border-bottom-width: 2px;
-transition: all 0.3s ease;
-}
-
-.registration-section .user-details .input-box select {
-height: 45px;
-width: 100%;
-outline: none;
-font-size: 16px;
-border-radius: 5px;
-padding-left: 15px;
-border: 1px solid var(--warna-primary);
-border-bottom-width: 2px;
-transition: all 0.3s ease;
-}
-
-.registration-section .user-details .input-box p {
-font-size: 11px;
+.registration-section .container{
+  max-width: 750px;
+  padding: 28px;
+  margin: 0 28px;
+  box-shadow: 0 15px 20px #abb2b9 ;
 }
 
 .registration-section .container .content .sub {
-font-weight: bold;
-font-size: clamp(30px, 4vw, 50px);
-}
+  font-weight: bold;
+  font-size: 26px;
+  text-align: left;
+  color: #2f4f4f;
+  padding-bottom: 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-bottom: 1px solid silver;
+  }
 
-.registration-section .garis-bawah::after {
-position: absolute;
-content: '';
-background: var(--warna-primary);
-height: 4px;
-width: 50%;
-left: 10%;
-transform: translateX(-50%);
-}
+  .registration-section .content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    }
 
-.registration-section .user-details .input-box textarea {
-height: 80px;
-width: 100%;
-outline: none;
-font-size: 16px;
-border-radius: 5px;
-padding-left: 15px;
-border: 1px solid var(--warna-primary);
-border-bottom-width: 2px;
-transition: all 0.3s ease;
-}
-.registration-section .user-details .input-box input:focus,
-.registration-section .user-details .input-box input:valid {
-border-color: #6f42c1;
-}
+  .registration-section form .user-details .input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  width: calc(100% / 2 - 20px);
+  color: var(--warna-primary);
+  font-size: clamp(14px, 2vw, 24px);  ;
+  }
 
-.registration-section .user-details .input-box textarea:focus,
-.registration-section .user-details .input-box textarea:valid {
-border-color: #6f42c1;
-}
+  .registration-section form .user-details .input-box input {
+  height: 40px;
+  /* width: 95%; */
+  /* padding: 0 10px; */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  }
 
-.registration-section .user-details .input-box select:focus,
-.registration-section .user-details .input-box select:valid {
-border-color: #6f42c1;
-}
+  .registration-section form .user-details .input-box input:is(:focus, :valid) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  }
 
-.registration-section form .gender-details .gender-title {
-font-size: 20px;
-font-weight: 500;
-}
-.registration-section form .category {
-display: flex;
-width: 80%;
-margin: 14px 0;
-justify-content: space-between;
-}
-.registration-section form .category label {
-display: flex;
-align-items: center;
-cursor: pointer;
-}
-.registration-section form .button {
-height: 45px;
-margin: 35px 0;
-}
-.registration-section form .button input {
-height: 100%;
-width: 100%;
-border-radius: 5px;
-border: none;
-color: var(--warna-tulisan2);
-font-size: 20px;
-font-weight: bold;
-letter-spacing: 1px;
-cursor: pointer;
-transition: all 0.3s ease;
-background: var(--warna-primary);
-}
-
-.registration-section form .buttonindo input {
-height: 100%;
-width: 100%;
-border-radius: 5px;
-border: none;
-color: var(--warna-tulisan2);
-font-size: 20px;
-font-weight: bold;
-letter-spacing: 1px;
-cursor: pointer;
-transition: all 0.3s ease;
-background: var(--warna-primary);
-/* display: none; */
-}
-
-.registration-section form .button input:hover{
-  box-shadow: 12px 12px #262521;
-  background-color: var(--warna-sekunder) !important;
-  border-color: #262521;
-  transition: .3s;
-}
-.registration-section form .buttonindo input:hover{
-  box-shadow: 12px 12px #262521;
-  background-color: var(--warna-sekunder) !important;
-  border-color: #262521;
-  transition: .3s;
-}
+  .registration-section .form-label{
+  color: #2f4f4f;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  }
 
 
-@media (max-width: 426px) {
-.registration-section form .user-details .input-box {
-  margin-bottom: 15px;
-  width: 200%;
-  color: var(--warna-tulisan);
-}
-.registration-section form .category {
-  width: 200%;
-}
-.registration-section .content form .user-details {
-  max-height: 400px;
-  overflow-y: scroll;
-}
-.registration-section .user-details::-webkit-scrollbar {
-  width: 5px;
-}
-.registration-section .container .content .con {
-  width: 23rem;
-  height: 60px;
-}
-}
+  .registration-section .container .content .info p{
+  font-size: 14px;
+  font-style: italic;
+  color: dimgray;
+  margin: 5px 0;
+  /* padding: 10px; */
+  }
 
-/* REGISTRATION END */
-/* REGISTRATION END */
+  .registration-section form .buttonindo input {
+  /* height: 100%; */
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #aa076b, #61045f);
+  /* border-radius: 5px;
+  border: none;
+  color: var(--warna-tulisan2);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--warna-primary); */
+  }
+
+  .registration-section form .buttonindo input:hover {
+    background-image: linear-gradient(to right, #61045f, #aa076b);
+    }
+
+    .registration-section .user-details .input-box select {
+      height: 45px;
+      width: 100%;
+      outline: none;
+      font-size: 15px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border-radius: 5px;
+      padding-left: 15px;
+      /* border: 1px solid var(--warna-primary); */
+      border-bottom-width: 2px;
+      transition: all 0.3s ease;
+      }  
+
+
+   @media (max-width:600px) {
+    .registration-section {
+      min-width: 280px; 
+    }
+    .registration-section .content form .user-details {
+      max-height: 380px;
+      overflow: auto;
+      }
+    .registration-section form .user-details .input-box {
+      margin-bottom: 12px;
+      width: 100%;
+    }
+    .registration-section form .user-details .input-box:nth-child(2n) {
+      justify-content: space-between;
+    }
+   }   
 
 
 /* LOW START */
@@ -999,3 +934,158 @@ background: var(--warna-primary);
 }
 /* LOW END */
 /* LOW END */
+
+/* GLOCOLIS  */
+.glocolis-section{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.glocolis-section .container{
+  max-width: 750px;
+  padding: 28px;
+  margin: 0 28px;
+  box-shadow: 0 15px 20px #abb2b9 ;
+}
+
+.glocolis-section .container .content .sub {
+  font-weight: bold;
+  font-size: 26px;
+  text-align: left;
+  color: #2f4f4f;
+  padding-bottom: 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-bottom: 1px solid silver;
+  }
+
+  .glocolis-section .container .content .info p{
+    font-size: 14px;
+    font-style: italic;
+    color: dimgray;
+    margin: 5px 0;
+    padding: 0 10px;
+    }
+/* GLOCOLIS */
+
+
+
+
+
+a {
+  border: none;
+  background: initial;
+}
+
+.link-web .btn {
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10 0px !important;
+}
+
+.btn {
+  /* margin-top: 100px; */
+  /* padding: 10px 100px; */
+  border-radius: 550000px;
+  cursor: pointer;
+  /* color: #ffffff; */
+  transition: all 0.4s;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.btn--primary {
+    /* width: 100%; */
+    margin-top: 10px;
+    padding: 10px;
+    /* display: block; */
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa076b, #61045f);
+}
+
+.btn--primary:hover {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #61045f, #aa076b);
+  box-shadow: 0 4px 15px 0 rgba(245,245,245);
+  border: #000 1px solid;
+}
+
+.btn--accent {
+    /* width: 100%; */
+    margin-top: 10px;
+    padding: 10px;
+    /* display: block; */
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #aa076b, #61045f);
+}
+
+.btn--accent:hover {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #61045f, #aa076b);
+  box-shadow: 0 4px 15px 0 rgba(245,245,245);
+  border: #000 1px solid;
+}
+
+@media screen and (max-width: 426px) {
+  .link-web .btn {
+    width: 95%;
+    margin-top: 2px !important;
+    margin-bottom: 10px;
+  }
+
+
+  .link-web a{
+      font-size: 20px;
+  }
+
+  .wrapper h1 {
+    font-size: 25px !important;
+    margin-top: 1px !important;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 30px !important;
+    justify-content: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .wrapper h2 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 90px !important;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border: 1px solid #ffffff;
+    width: 320px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 5px;
+    background: linear-gradient(to right, #198754 50%, #fefefe 150%);
+  }
+  .btn {
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* color: #ffffff; */
+    transition: all 0.4s;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .glocolis-section .container .content .info p{
+    margin-bottom: 50px;
+    }
+}
