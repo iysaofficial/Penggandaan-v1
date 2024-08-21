@@ -266,10 +266,10 @@ export default function Home() {
             <form name="regist-form mt-5">
               <div class="link-web mx-auto text-center">
                 <Link href="/glocolis" legacyBehavior>
-                  <Link className="btn btn--primary text-center mt-5">Penggandaan GLOCOLIS</Link>
+                  <a className="btn btn--primary text-center mt-5">Penggandaan GLOCOLIS</a>
                 </Link>
                 <Link href="/ispc" legacyBehavior>
-                  <Link class="btn btn--accent text-center mt-5" >Penggandaan ISPC</Link>
+                  <a class="btn btn--accent text-center mt-5" >Penggandaan ISPC</a>
                 </Link>
               </div>
               {/* <div className="buttonindo">
