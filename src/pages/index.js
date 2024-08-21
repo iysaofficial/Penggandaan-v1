@@ -2,6 +2,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { Inter } from "next/font/google";
 import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -258,26 +259,26 @@ export default function Home() {
 
             <div className="info">
               <p>
-                Pilih dari beberapa nama event berikut yang sedang dikuti dan ingi melakukan penggandaan mendali...
+                Pilih dari beberapa nama event berikut yang sedang dikuti dan
+                ingi melakukan penggandaan mendali...
               </p>
             </div>
             <form name="regist-form mt-5">
               <div class="link-web mx-auto text-center">
-                <a
-                  href="/glocolis"
-                  class="btn btn--primary text-center mt-5"
-                >
+                <Link href="/glocolis" legacyBehavior>
+                  <a className="btn btn--primary text-center mt-5">Penggandaan GLOCOLIS</a>
+                </Link>
+                <Link href="/ispc" legacyBehavior>
+                  <a class="btn btn--accent text-center mt-5" >Penggandaan ISPC</a>
+                </Link>
+                {/* <a href="/glocolis" class="btn btn--primary text-center mt-5">
                   Penggandaan GLOCOLIS{" "}
                   <i class="&nbsp; fa-solid fa-earth-americas"></i>
-                </a>
-                <a
-                  href="/ispc"
-                  class="btn btn--accent text-center mt-5"
-                >
+                </a> */}
+                {/* <a href="/ispc" class="btn btn--accent text-center mt-5">
                   Penggandaan ISPC{" "}
                   <i class="&nbsp; fa-solid fa-earth-americas"></i>
-                  
-                </a>
+                </a> */}
               </div>
               {/* <div className="buttonindo">
                 <input
