@@ -99,7 +99,8 @@ export default function Home() {
       selectedCategory !== "3 Medali" &&
       selectedCategory !== "4 Medali" &&
       selectedCategory !== "5 Medali" &&
-      selectedCategory !== "6 Medali"
+      selectedCategory !== "6 Medali" &&
+      selectedCategory !== "7 Medali"
     ) {
       alert("Anda harus memilih berapa banyak medali yang ingin digandakan.");
       return;
@@ -193,6 +194,8 @@ export default function Home() {
       setPrice("1250000");
     } else if (selectedCategory === "6 Medali") {
       setPrice("1500000");
+    } else if (selectedCategory === "7 Medali") {
+      setPrice("1750000");
     } else {
       setPrice("");
     }
@@ -257,14 +260,13 @@ export default function Home() {
             <br></br>
 
             <div className="info">
-                <p>
-                  Isi data berikut dengan akurat dan benar. Pastikan
-                  setiap detail yang dimasukkan sesuai dengan informasi yang
-                  sebenarnya, agar data yang diterima dapat diolah dengan
-                  benar dan menghasilkan output yang valid. Terima kasih atas
-                  kerjasama Anda.
-                </p>
-              </div>
+              <p>
+                Isi data berikut dengan akurat dan benar. Pastikan setiap detail
+                yang dimasukkan sesuai dengan informasi yang sebenarnya, agar
+                data yang diterima dapat diolah dengan benar dan menghasilkan
+                output yang valid. Terima kasih atas kerjasama Anda.
+              </p>
+            </div>
             <form name="regist-form">
               <div className="user-details">
                 {/* <div className="input-box">
@@ -283,7 +285,7 @@ export default function Home() {
                 </div> */}
                 <div className="input-box">
                   <label for="Kategori Peserta" className="form-label">
-                  Kategori Peserta
+                    Kategori Peserta
                   </label>
                   <select
                     type="text"
