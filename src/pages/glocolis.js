@@ -207,7 +207,7 @@ export default function Home() {
 
   useEffect(() => {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbyksmuKXNgmwtcnoAmyv7sE1VrgWkTGnv6t4XHVAJUlrAevmrMV6oGT3MwaYPnpcZL_/exec";
+      "https://script.google.com/macros/s/AKfycbzlE3beM9Hl-bMM9cfohymY6mZbjBYlsZiqNeJTdMGRq7o7D62yxW133-2MM08DH00F_A/exec";
 
     const form = document.forms["regist-form"];
 
@@ -413,6 +413,7 @@ export default function Home() {
                       <option value="4 Medali">4 Medali</option>
                       <option value="5 Medali">5 Medali</option>
                       <option value="6 Medali">6 Medali</option>
+                      <option value="7 Medali">7 Medali</option>
                     </select>
                   </div>
                   <div className="input-box">
