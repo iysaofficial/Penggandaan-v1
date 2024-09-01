@@ -249,7 +249,7 @@ export default function Home() {
       </Head>
       <Script
         type="text/javascript"
-        src="https://app.sandbox.midtrans.com/snap/snap.js"
+        src="https://api.midtrans.com/snap/snap.js"
         data-client-key={process.env.NEXT_PUBLIC_CLIENT}
       ></Script>
       <section className="registration-section">
