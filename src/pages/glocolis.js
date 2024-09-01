@@ -55,7 +55,7 @@ export default function Home() {
       itemDetails: [
         {
           id: uniqueId,
-          name: selectedCategory,
+          name: `${selectedCategory} - ${selectKategoriMedali}`,
           price: formattedPrice.toString(),
           quantity: "1",
         },
