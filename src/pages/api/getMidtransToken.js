@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     // Buat instance Snap Midtrans
     const snap = new midtransClient.Snap({
       isProduction: false, // Ubah ke true untuk produksi
-      serverKey: process.env.NEXT_PUBLIC_SECRET,
+      serverKey: process.env.MIDTRANS_SERVER_KEY,
     });
 
     // Dapatkan data transaksi dari request body
